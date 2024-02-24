@@ -1,10 +1,15 @@
 import MyComponent from "./components/MyComponent/MyComponent";
-import clock from "@components/Clock/clock"
+import Clock from "./components/Clock/Clock"
+import styles from "@/app/page.module.css"
+import Counter from "./components/Counter/counter"
+
 export default function Home() {
   return (
-    <div>
-      <MyComponent/>
-      <Clock /></Clock>
-      </div>
+    <div className={styles.page}>
+      <MyComponent />
+      <Clock />
+      <Counter />
+    </div>
   );
 }
+
